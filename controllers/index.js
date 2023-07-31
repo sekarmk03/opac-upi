@@ -1,3 +1,4 @@
 const biblio = require('./biblio');
+const collection = require('./collection');
 
-module.exports = { biblio };
+module.exports = { biblio, collection };
