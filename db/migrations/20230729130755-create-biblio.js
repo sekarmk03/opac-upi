@@ -13,6 +13,9 @@ module.exports = {
       last_change_dt: {
         type: Sequelize.DATE
       },
+      last_change_userid: {
+        type: Sequelize.INTEGER
+      },
       material_cd: {
         type: Sequelize.INTEGER
       },

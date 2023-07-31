@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     create_dt: DataTypes.DATE,
     last_change_dt: DataTypes.DATE,
+    last_change_userid: DataTypes.INTEGER,
     material_cd: DataTypes.INTEGER,
     collection_cd: DataTypes.INTEGER,
     call_nmbr1: DataTypes.STRING,
