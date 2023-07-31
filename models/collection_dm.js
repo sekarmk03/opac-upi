@@ -14,7 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   collection_dm.init({
-    code: DataTypes.INTEGER,
+    code: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+    },
     description: DataTypes.TEXT,
     default_flg: DataTypes.STRING,
     days_due_back: DataTypes.INTEGER,
@@ -26,5 +29,6 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName: true,
     timestamps: false,
   });
+  collection_dm.removeAttribute('id');
   return collection_dm;
 };

@@ -14,7 +14,10 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   material_type_dm.init({
-    code: DataTypes.INTEGER,
+    code: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+    },
     description: DataTypes.TEXT,
     default_flg: DataTypes.STRING,
     image_file: DataTypes.STRING
@@ -25,5 +28,6 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName: true,
     timestamps: false,
   });
+  material_type_dm.removeAttribute('id');
   return material_type_dm;
 };

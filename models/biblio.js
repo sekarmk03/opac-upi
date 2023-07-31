@@ -11,10 +11,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      biblio.belongsTo(models.material_type_dm, {targetKey: 'code', foreignKey: 'material_cd', as: 'material'});
+      biblio.belongsTo(models.collection_dm, {targetKey: 'code', foreignKey: 'collection_cd', as: 'collection'});
     }
   }
   biblio.init({
-    bibid: DataTypes.INTEGER,
+    bibid: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+    },
     create_dt: DataTypes.DATE,
     last_change_dt: DataTypes.DATE,
     material_cd: DataTypes.INTEGER,
@@ -39,5 +44,6 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: false,
     freezeTableName: true,
   });
+  biblio.removeAttribute('id');
   return biblio;
 };
