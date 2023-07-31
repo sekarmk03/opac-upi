@@ -34,4 +34,4 @@ app.use((err, req, res, next) => {
     });
 });
 
-app.listen(PORT, () => console.log(`Server running in port ${PORT}`));
+module.exports = app;
