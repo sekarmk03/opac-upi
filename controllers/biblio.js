@@ -18,36 +18,99 @@ module.exports = {
             let start = 0 + (page - 1) * limit;
             let end = page * limit;
 
-            const biblios = await Biblio.findAndCountAll({
-                where: {
-                    [search]: {
-                        [Op.like]: sequelize.fn('LOWER', sequelize.col(`${search}`)),
-                        [Op.like]: `%${key.toLowerCase()}%`
-                    }
-                },
-                include: [
-                    {
-                        model: Collection,
-                        as: 'collection',
-                        attributes: ['description']
+            let biblios;
+
+            if (search == 'author' || search == 'title') {
+                biblios = await Biblio.findAndCountAll({
+                    where: {
+                        [search]: {
+                            [Op.like]: sequelize.fn('LOWER', sequelize.col(`${search}`)),
+                            [Op.like]: `%${key.toLowerCase()}%`
+                        }
                     },
-                    {
-                        model: Material,
-                        as: 'material',
-                        attributes: ['description']
+                    include: [
+                        {
+                            model: Collection,
+                            as: 'collection',
+                            attributes: ['description']
+                        },
+                        {
+                            model: Material,
+                            as: 'material',
+                            attributes: ['description']
+                        },
+                        {
+                            model: BibCopy,
+                            as: 'copies',
+                            attributes: ['status_cd'],
+                        }
+                    ],
+                    order: [
+                        [sort, type]
+                    ],
+                    limit: limit,
+                    offset: start,
+                });
+            } else if (search == 'subject') {
+                biblios = await Biblio.findAndCountAll({
+                    where: {
+                        [Op.or]: [
+                            {
+                                topic1: {
+                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic1')),
+                                    [Op.like]: `%${key.toLowerCase()}%`
+                                }
+                            },
+                            {
+                                topic2: {
+                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic2')),
+                                    [Op.like]: `%${key.toLowerCase()}%`
+                                }
+                            },
+                            {
+                                topic3: {
+                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic3')),
+                                    [Op.like]: `%${key.toLowerCase()}%`
+                                }
+                            },
+                            {
+                                topic4: {
+                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic4')),
+                                    [Op.like]: `%${key.toLowerCase()}%`
+                                }
+                            },
+                            {
+                                topic5: {
+                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic5')),
+                                    [Op.like]: `%${key.toLowerCase()}%`
+                                }
+                            },
+                        ]
                     },
-                    {
-                        model: BibCopy,
-                        as: 'copies',
-                        attributes: ['status_cd'],
-                    }
-                ],
-                order: [
-                    [sort, type]
-                ],
-                limit: limit,
-                offset: start,
-            });
+                    include: [
+                        {
+                            model: Collection,
+                            as: 'collection',
+                            attributes: ['description']
+                        },
+                        {
+                            model: Material,
+                            as: 'material',
+                            attributes: ['description']
+                        },
+                        {
+                            model: BibCopy,
+                            as: 'copies',
+                            attributes: ['status_cd'],
+                        }
+                    ],
+                    order: [
+                        [sort, type]
+                    ],
+                    limit: limit,
+                    offset: start,
+                });
+            }
 
             let count = biblios.count;
             let pagination = {};
