@@ -1,5 +1,6 @@
-const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection } = require('../models');
-const { Op, Sequelize } = require('sequelize');
+const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy } = require('../models');
+const { Op } = require('sequelize');
+const countCopies = require('../utils/countCopies');
 
 module.exports = {
     basicSearch: async (req, res, next) => {
@@ -20,7 +21,7 @@ module.exports = {
             const biblios = await Biblio.findAndCountAll({
                 where: {
                     [search]: {
-                        [Op.like]: Sequelize.fn('LOWER', Sequelize.col(`${search}`)),
+                        [Op.like]: sequelize.fn('LOWER', sequelize.col(`${search}`)),
                         [Op.like]: `%${key.toLowerCase()}%`
                     }
                 },
@@ -34,6 +35,11 @@ module.exports = {
                         model: Material,
                         as: 'material',
                         attributes: ['description']
+                    },
+                    {
+                        model: BibCopy,
+                        as: 'copies',
+                        attributes: ['status_cd'],
                     }
                 ],
                 order: [
@@ -53,7 +59,7 @@ module.exports = {
             pagination.prev = start > 0 ? page - 1 : null;
 
             const data = biblios.rows.map(({
-                bibid, create_dt, call_nmbr1, call_nmbr2, call_nmbr3, title, title_remainder, author, collection, material
+                bibid, create_dt, call_nmbr1, call_nmbr2, call_nmbr3, title, title_remainder, author, collection, material, copies
             }) => ({
                 biblio_id: bibid,
                 created_at: create_dt,
@@ -62,7 +68,9 @@ module.exports = {
                 subtitle: title_remainder,
                 author,
                 collection: collection.description,
-                material: material.description
+                material: material.description,
+                available: countCopies(copies),
+                copies: copies.length
             }));
 
             return res.status(200).json({

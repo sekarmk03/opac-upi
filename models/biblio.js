@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       biblio.belongsTo(models.material_type_dm, {targetKey: 'code', foreignKey: 'material_cd', as: 'material'});
       biblio.belongsTo(models.collection_dm, {targetKey: 'code', foreignKey: 'collection_cd', as: 'collection'});
+      biblio.hasMany(models.biblio_copy, {targetKey: 'bibid', foreignKey: 'bibid', as: 'copies'});
     }
   }
   biblio.init({
