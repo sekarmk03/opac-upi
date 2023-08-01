@@ -1,12 +1,13 @@
-const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy, biblio_status_dm: BibStatus } = require('../models');
+const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy, biblio_status_dm: BibStatus, biblio_field: BibDetail } = require('../models');
 const { Op } = require('sequelize');
 const countCopies = require('../utils/countCopies');
+const processDetail = require('../utils/biblioDetail');
 
 module.exports = {
     basicSearch: async (req, res, next) => {
         try {
             let {
-                sort = "title", type = "ASC", search = "title", key = "", page = "1", limit = "10"
+                sort = "bibid", type = "ASC", search = "title", key = "", page = "1", limit = "10"
             } = req.query;
 
             sort = sort.toLowerCase();
@@ -151,10 +152,11 @@ module.exports = {
     biblioDetail: async (req, res, next) => {
         try {
             const { biblio_id } = req.params;
+            const id = parseInt(biblio_id);
 
             const biblio = await Biblio.findOne({
                 where: {
-                    bibid: biblio_id,
+                    bibid: id,
                 },
                 include: [
                     {
@@ -188,6 +190,11 @@ module.exports = {
                 });
             }
 
+            const detailData = await BibDetail.findAll({
+                where: {bibid: id},
+                attributes: ['tag', 'subfield_cd', 'field_data']
+            });
+
             const copiesData = biblio.copies.map(({copyid, barcode_nmbr, status_cd, status}) => ({
                 copy_id: copyid,
                 barcode: barcode_nmbr,
@@ -206,24 +213,12 @@ module.exports = {
                 responsibility: biblio.responsibility_stmt,
                 collection: biblio.collection.description,
                 material: biblio.material.description,
+                ...processDetail(detailData),
                 copies: {
                     available: countCopies(biblio.copies),
                     totalCopies: biblio.copies.length,
                     copiesData
                 },
-                ddc: '',
-                classification: '',
-                edition: '',
-                publication: '',
-                publisher: '',
-                publish_year: '',
-                totalPages: '',
-                other_detail: '',
-                dimention: '',
-                source: '',
-                operator: '',
-                id: '',
-                isbn_issn: ''
             };
 
             return res.status(200).json({
