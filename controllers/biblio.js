@@ -1,4 +1,4 @@
-const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy } = require('../models');
+const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy, biblio_status_dm: BibStatus } = require('../models');
 const { Op } = require('sequelize');
 const countCopies = require('../utils/countCopies');
 
@@ -12,6 +12,7 @@ module.exports = {
             sort = sort.toLowerCase();
             search = search.toLowerCase();
             key = key.toLowerCase();
+            if (sort == 'date') sort = 'last_change_dt';
 
             page = parseInt(page);
             limit = parseInt(limit);
@@ -140,6 +141,94 @@ module.exports = {
                 status: 'OK',
                 message: 'Get Biblios success',
                 pagination,
+                data: data
+            });
+        } catch (error) {
+            next(error);
+        }
+    },
+
+    biblioDetail: async (req, res, next) => {
+        try {
+            const { biblio_id } = req.params;
+
+            const biblio = await Biblio.findOne({
+                where: {
+                    bibid: biblio_id,
+                },
+                include: [
+                    {
+                        model: Collection,
+                        as: 'collection',
+                        attributes: ['description']
+                    },
+                    {
+                        model: Material,
+                        as: 'material',
+                        attributes: ['description']
+                    },
+                    {
+                        model: BibCopy,
+                        as: 'copies',
+                        attributes: ['copyid', 'barcode_nmbr', 'status_cd'],
+                        include: {
+                            model: BibStatus,
+                            as: 'status',
+                            attributes: ['description']
+                        }
+                    }
+                ],
+            });
+
+            if (!biblio) {
+                return res.status(404).json({
+                    status: 'NOT FOUND',
+                    message: 'Biblio not found',
+                    data: null
+                });
+            }
+
+            const copiesData = biblio.copies.map(({copyid, barcode_nmbr, status_cd, status}) => ({
+                copy_id: copyid,
+                barcode: barcode_nmbr,
+                status_code: status_cd,
+                status: status.description
+            }));
+
+            const data = {
+                biblio_id: biblio.bibid,
+                created_at: biblio.create_dt,
+                call_number: [biblio.call_nmbr1, biblio.call_nmbr2, biblio.call_nmbr3].join(' '),
+                title: biblio.title,
+                subtitle: biblio.title_remainder,
+                subjects: [biblio.topic1, biblio.topic2, biblio.topic3].join(', '),
+                author: biblio.author,
+                responsibility: biblio.responsibility_stmt,
+                collection: biblio.collection.description,
+                material: biblio.material.description,
+                copies: {
+                    available: countCopies(biblio.copies),
+                    totalCopies: biblio.copies.length,
+                    copiesData
+                },
+                ddc: '',
+                classification: '',
+                edition: '',
+                publication: '',
+                publisher: '',
+                publish_year: '',
+                totalPages: '',
+                other_detail: '',
+                dimention: '',
+                source: '',
+                operator: '',
+                id: '',
+                isbn_issn: ''
+            };
+
+            return res.status(200).json({
+                status: 'OK',
+                message: 'Get Biblio detail success',
                 data: data
             });
         } catch (error) {

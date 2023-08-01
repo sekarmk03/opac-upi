@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       biblio_copy.belongsTo(models.biblio, {targetKey: 'bibid', foreignKey: 'bibid', as: 'copy'});
+      biblio_copy.belongsTo(models.biblio_status_dm, {targetKey: 'code', foreignKey: 'status_cd', as: 'status'});
     }
   }
   biblio_copy.init({
