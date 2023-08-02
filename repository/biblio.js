@@ -155,9 +155,7 @@ module.exports = {
     },
 
     simpleSubjectSearch: async (key1, key2, key3) => {
-        // let query = `SELECT DISTINCT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data FROM biblio AS b LEFT JOIN (SELECT * FROM biblio_field WHERE (tag=260 AND subfield_cd='b') OR (tag=260 AND subfield_cd='c')) as f ON b.bibid = f.bibid WHERE LOWER(b.topic1) LIKE '%${key1}%' OR LOWER(b.topic2) LIKE '%${key1}%' OR LOWER(b.topic1) LIKE '%${key2}%' OR LOWER(b.topic2) LIKE '%${key2}%' OR LOWER(b.topic1) LIKE '%${key3}%' OR LOWER(b.topic2) LIKE '%${key3}%'`;
-
-        let query = `SELECT subquery.bibid, subquery.title, subquery.author, subquery.tag, subquery.subfield_cd, subquery.field_data
+        let query = `SELECT subq.bibid, subq.title, subq.author, subq.tag, subq.subfield_cd, subq.field_data
         FROM (
             SELECT DISTINCT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data
             FROM biblio AS b
@@ -171,13 +169,13 @@ module.exports = {
                 OR LOWER(b.topic2) LIKE '%${key2}%'
                 OR LOWER(b.topic1) LIKE '%${key3}%'
                 OR LOWER(b.topic2) LIKE '%${key3}%'
-        ) AS subquery
-        GROUP BY subquery.title;`;
+        ) AS subq
+        GROUP BY subq.title;`;
 
         const biblios = await sequelize.query(query, { type: QueryTypes.SELECT });
 
         const finBiblios = reducePub(biblios);
 
         return finBiblios;
-    }
+    },
 }

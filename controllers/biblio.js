@@ -1,3 +1,5 @@
+const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy, biblio_status_dm: BibStatus, biblio_field: BibDetail } = require('../models');
+const { Op, QueryTypes } = require('sequelize');
 const Fuse = require('fuse.js');
 const countCopies = require('../utils/countCopies');
 const processDetail = require('../utils/biblioDetail');
@@ -130,12 +132,32 @@ module.exports = {
 
     test: async (req, res, next) => {
         try {
-            const key = 'sales';
+            // const data = await BibDetail.findAll({
+            //     where: {
+            //         [Op.or]: [
+            //             { bibid: 1 },
+            //             { bibid: 5 },
+            //             { bibid: 6 },
+            //             { bibid: 7 },
+            //             { bibid: 8 },
+            //             { bibid: 11 },
+            //             { bibid: 21 },
+            //             { bibid: 30 },
+            //             { bibid: 88 },
+            //             { bibid: 63434 },
+            //             { bibid: 12916 },
+            //             { bibid: 38045 },
+            //             { bibid: 48286 },
+            //             { bibid: 62223 },
+            //             { bibid: 59749 },
+            //         ]
+            //     }
+            // })
 
-            const biblios = await bibRepo.simpleSubjectSearch(key);
+            const data = await BibStatus.findAll();
 
             return res.status(200).json({
-                data: biblios
+                data: data
             });
         } catch (error) {
             next(error);
