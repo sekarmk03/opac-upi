@@ -154,7 +154,14 @@ module.exports = {
             //     }
             // })
 
-            const data = await BibStatus.findAll();
+            // const data = await BibStatus.findAll();
+
+            const data = await BibDetail.findAll({
+                limit: 2324,
+                order: [
+                    ['bibid', 'ASC']
+                ],
+            });
 
             return res.status(200).json({
                 data: data
