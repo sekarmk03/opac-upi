@@ -1,7 +1,7 @@
-const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy, biblio_status_dm: BibStatus, biblio_field: BibDetail } = require('../models');
-const { Op } = require('sequelize');
+const Fuse = require('fuse.js');
 const countCopies = require('../utils/countCopies');
 const processDetail = require('../utils/biblioDetail');
+const bibRepo = require('../repository/biblio');
 
 module.exports = {
     basicSearch: async (req, res, next) => {
@@ -23,95 +23,9 @@ module.exports = {
             let biblios;
 
             if (search == 'author' || search == 'title') {
-                biblios = await Biblio.findAndCountAll({
-                    where: {
-                        [search]: {
-                            [Op.like]: sequelize.fn('LOWER', sequelize.col(`${search}`)),
-                            [Op.like]: `%${key.toLowerCase()}%`
-                        }
-                    },
-                    include: [
-                        {
-                            model: Collection,
-                            as: 'collection',
-                            attributes: ['description']
-                        },
-                        {
-                            model: Material,
-                            as: 'material',
-                            attributes: ['description']
-                        },
-                        {
-                            model: BibCopy,
-                            as: 'copies',
-                            attributes: ['status_cd'],
-                        }
-                    ],
-                    order: [
-                        [sort, type]
-                    ],
-                    limit: limit,
-                    offset: start,
-                });
+                biblios = await bibRepo.basicSearchRepo(search, key, sort, type, limit, start);
             } else if (search == 'subject') {
-                biblios = await Biblio.findAndCountAll({
-                    where: {
-                        [Op.or]: [
-                            {
-                                topic1: {
-                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic1')),
-                                    [Op.like]: `%${key.toLowerCase()}%`
-                                }
-                            },
-                            {
-                                topic2: {
-                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic2')),
-                                    [Op.like]: `%${key.toLowerCase()}%`
-                                }
-                            },
-                            {
-                                topic3: {
-                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic3')),
-                                    [Op.like]: `%${key.toLowerCase()}%`
-                                }
-                            },
-                            {
-                                topic4: {
-                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic4')),
-                                    [Op.like]: `%${key.toLowerCase()}%`
-                                }
-                            },
-                            {
-                                topic5: {
-                                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic5')),
-                                    [Op.like]: `%${key.toLowerCase()}%`
-                                }
-                            },
-                        ]
-                    },
-                    include: [
-                        {
-                            model: Collection,
-                            as: 'collection',
-                            attributes: ['description']
-                        },
-                        {
-                            model: Material,
-                            as: 'material',
-                            attributes: ['description']
-                        },
-                        {
-                            model: BibCopy,
-                            as: 'copies',
-                            attributes: ['status_cd'],
-                        }
-                    ],
-                    order: [
-                        [sort, type]
-                    ],
-                    limit: limit,
-                    offset: start,
-                });
+                biblios = await bibRepo.subjectSearch(search, key, sort, type, limit, start);
             }
 
             let count = biblios.count;
@@ -154,33 +68,7 @@ module.exports = {
             const { biblio_id } = req.params;
             const id = parseInt(biblio_id);
 
-            const biblio = await Biblio.findOne({
-                where: {
-                    bibid: id,
-                },
-                include: [
-                    {
-                        model: Collection,
-                        as: 'collection',
-                        attributes: ['description']
-                    },
-                    {
-                        model: Material,
-                        as: 'material',
-                        attributes: ['description']
-                    },
-                    {
-                        model: BibCopy,
-                        as: 'copies',
-                        attributes: ['copyid', 'barcode_nmbr', 'status_cd'],
-                        include: {
-                            model: BibStatus,
-                            as: 'status',
-                            attributes: ['description']
-                        }
-                    }
-                ],
-            });
+            const biblio = await bibRepo.findById(id);
 
             if (!biblio) {
                 return res.status(404).json({
@@ -190,16 +78,24 @@ module.exports = {
                 });
             }
 
-            const detailData = await BibDetail.findAll({
-                where: {bibid: id},
-                attributes: ['tag', 'subfield_cd', 'field_data']
+            const detailData = await bibRepo.findDetailById(id);
+
+            let searchedData = await bibRepo.simpleSubjectSearch(biblio.topic1, biblio.topic2, biblio.topic3);
+            const queryTitle = biblio.title;
+
+            const fuse = new Fuse(searchedData, {
+                keys: ['title']
             });
 
-            const copiesData = biblio.copies.map(({copyid, barcode_nmbr, status_cd, status}) => ({
+            const similarBiblio = fuse.search(queryTitle).map(({item}) => (item));
+
+            const copiesData = biblio.copies.map(({copyid, barcode_nmbr, status_cd, status, status_begin_dt, due_back_dt}) => ({
                 copy_id: copyid,
                 barcode: barcode_nmbr,
                 status_code: status_cd,
-                status: status.description
+                status: status.description,
+                begin_date: status_begin_dt,
+                back_date: due_back_dt
             }));
 
             const data = {
@@ -219,12 +115,27 @@ module.exports = {
                     totalCopies: biblio.copies.length,
                     copiesData
                 },
+                recommendation: similarBiblio.slice(0, 10)
             };
 
             return res.status(200).json({
                 status: 'OK',
                 message: 'Get Biblio detail success',
                 data: data
+            });
+        } catch (error) {
+            next(error);
+        }
+    },
+
+    test: async (req, res, next) => {
+        try {
+            const key = 'sales';
+
+            const biblios = await bibRepo.simpleSubjectSearch(key);
+
+            return res.status(200).json({
+                data: biblios
             });
         } catch (error) {
             next(error);

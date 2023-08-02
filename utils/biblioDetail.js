@@ -12,7 +12,7 @@ const processDetail = (data) => {
         } else if ("250_a" in obj) {
             acc.edition_stmt = obj['250_a'];
         } else if ("20_c" in obj) {
-            acc.avail_term = obj['20_c'];
+            acc.availability_term = obj['20_c'];
         } else if ("260_a" in obj) {
             acc.pub_place = obj['260_a'];
         } else if ("260_b" in obj) {
@@ -33,7 +33,14 @@ const processDetail = (data) => {
             acc.no_id = obj['997_a'];
         } else if ("20_z" in obj) {
             acc.isbn_issn = obj['20_z'];
+        } else if ("520_a" in obj) {
+            acc.abstract = obj['520_a'];
         }
+
+        if (!("520_a" in obj)) {
+            acc.abstract = '-';
+        }
+
         return acc;
     }, {});
 
