@@ -117,7 +117,7 @@ module.exports = {
                     totalCopies: biblio.copies.length,
                     copiesData
                 },
-                recommendation: similarBiblio.slice(1, 11)
+                recommendation: similarBiblio.slice(0, 11)
             };
 
             return res.status(200).json({
