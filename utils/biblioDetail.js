@@ -35,10 +35,16 @@ const processDetail = (data) => {
             acc.isbn_issn = obj['20_z'];
         } else if ("520_a" in obj) {
             acc.abstract = obj['520_a'];
+        } else if ("520_b" in obj) {
+            acc.anotasi = obj['520_b'];
         }
 
         if (!("520_a" in obj)) {
-            acc.abstract = '-';
+            acc.abstract = '';
+        }
+
+        if (!("520_b" in obj)) {
+            acc.anotasi = '';
         }
 
         return acc;

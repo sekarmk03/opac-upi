@@ -132,36 +132,9 @@ module.exports = {
 
     test: async (req, res, next) => {
         try {
-            // const data = await BibDetail.findAll({
-            //     where: {
-            //         [Op.or]: [
-            //             { bibid: 1 },
-            //             { bibid: 5 },
-            //             { bibid: 6 },
-            //             { bibid: 7 },
-            //             { bibid: 8 },
-            //             { bibid: 11 },
-            //             { bibid: 21 },
-            //             { bibid: 30 },
-            //             { bibid: 88 },
-            //             { bibid: 63434 },
-            //             { bibid: 12916 },
-            //             { bibid: 38045 },
-            //             { bibid: 48286 },
-            //             { bibid: 62223 },
-            //             { bibid: 59749 },
-            //         ]
-            //     }
-            // })
+            const biblio = await bibRepo.findById(1);
 
-            // const data = await BibStatus.findAll();
-
-            const data = await BibDetail.findAll({
-                limit: 2324,
-                order: [
-                    ['bibid', 'ASC']
-                ],
-            });
+            const data = await bibRepo.simpleSubjectSearch(biblio.topic1, biblio.topic2, biblio.topic3);
 
             return res.status(200).json({
                 data: data

@@ -9,6 +9,8 @@ const reducePub = (biblios) => {
             author: obj.author,
             publisher: obj.subfield_cd === "b" ? obj.field_data : null,
             year: obj.subfield_cd === "c" ? obj.field_data : null,
+            // publisher: ("300_b" in obj) ? obj.field_data : null,
+            // year: ("300_b" in obj) ? obj.field_data : null
           });
         } else {
             if (obj.subfield_cd === "b") {

@@ -1,6 +1,7 @@
 const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy, biblio_status_dm: BibStatus, biblio_field: BibDetail } = require('../models');
 const { Op, QueryTypes } = require('sequelize');
 const reducePub = require('../utils/reducePub');
+const removeDuplicate = require('../utils/removeDuplicate');
 
 module.exports = {
     basicSearchRepo: async (search, key, sort, type, limit, start) => {
@@ -155,9 +156,24 @@ module.exports = {
     },
 
     simpleSubjectSearch: async (key1, key2, key3) => {
-        let query = `SELECT subq.bibid, subq.title, subq.author, subq.tag, subq.subfield_cd, subq.field_data
-        FROM (
-            SELECT DISTINCT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data
+        // let query = `SELECT subq.bibid, subq.title, subq.author, subq.tag, subq.subfield_cd, subq.field_data
+        // FROM (
+        //     SELECT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data
+        //     FROM biblio AS b
+        //     LEFT JOIN (
+        //         SELECT * FROM biblio_field
+        //         WHERE (tag=260 AND subfield_cd='b') OR (tag=260 AND subfield_cd='c')
+        //     ) AS f ON b.bibid = f.bibid
+        //     WHERE LOWER(b.topic1) LIKE '%${key1}%'
+        //         OR LOWER(b.topic2) LIKE '%${key1}%'
+        //         OR LOWER(b.topic1) LIKE '%${key2}%'
+        //         OR LOWER(b.topic2) LIKE '%${key2}%'
+        //         OR LOWER(b.topic1) LIKE '%${key3}%'
+        //         OR LOWER(b.topic2) LIKE '%${key3}%'
+        // ) AS subq
+        // GROUP BY subq.title;`;
+        let query = `
+            SELECT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data
             FROM biblio AS b
             LEFT JOIN (
                 SELECT * FROM biblio_field
@@ -169,12 +185,13 @@ module.exports = {
                 OR LOWER(b.topic2) LIKE '%${key2}%'
                 OR LOWER(b.topic1) LIKE '%${key3}%'
                 OR LOWER(b.topic2) LIKE '%${key3}%'
-        ) AS subq
-        GROUP BY subq.title;`;
+        ;`;
 
         const biblios = await sequelize.query(query, { type: QueryTypes.SELECT });
 
-        const finBiblios = reducePub(biblios);
+        const redBiblios = reducePub(biblios);
+
+        const finBiblios = removeDuplicate(redBiblios);
 
         return finBiblios;
     },
