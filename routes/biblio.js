@@ -4,6 +4,7 @@ const c = require('../controllers');
 
 router.get('/test', c.biblio.test);
 router.get('/basic-search', c.biblio.basicSearch);
+router.get('/advanced-search', c.biblio.advancedSearch);
 router.get('/:biblio_id', c.biblio.biblioDetail);
 
 module.exports = router;

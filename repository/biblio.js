@@ -2,6 +2,7 @@ const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Co
 const { Op, QueryTypes } = require('sequelize');
 const reducePub = require('../utils/reducePub');
 const removeDuplicate = require('../utils/removeDuplicate');
+const generateCondition = require('../utils/generateCondition');
 
 module.exports = {
     basicSearchRepo: async (search, key, sort, type, limit, start) => {
@@ -195,4 +196,55 @@ module.exports = {
 
         return finBiblios;
     },
+
+    advanceSearch: async (sort, type, limit, start, title, author, subject, material, collection) => {
+        const conditions = [];
+
+        if (title && title.length > 0) generateCondition(conditions, title, 'title');
+        if (author && author.length > 0) generateCondition(conditions, author, 'author');
+        if (subject && subject.length > 0) generateCondition(conditions, subject, 'subject');
+
+        if (material != null || material !== '' || material) {
+            const materialCond = { material_cd: material };
+            conditions.push(materialCond);
+        }
+
+        if (collection != null || collection !== '' || collection) {
+            const collectionCond = { collection_cd: collection };
+            conditions.push(collectionCond);
+        }
+
+        const whereCondition = {
+            [Op.and]: conditions,
+        };
+
+        const biblios = await Biblio.findAndCountAll({
+            where: whereCondition,
+            include: [
+                {
+                    model: Collection,
+                    as: 'collection',
+                    attributes: ['description']
+                },
+                {
+                    model: Material,
+                    as: 'material',
+                    attributes: ['description']
+                },
+                {
+                    model: BibCopy,
+                    as: 'copies',
+                    attributes: ['status_cd'],
+                }
+            ],
+            order: [
+                [sort, type]
+            ],
+            limit: limit,
+            offset: start,
+            distinct: true
+        });
+
+        return biblios;
+    }
 }

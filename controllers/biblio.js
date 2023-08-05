@@ -1,9 +1,8 @@
-const { biblio: Biblio, sequelize, material_type_dm: Material, collection_dm: Collection, biblio_copy: BibCopy, biblio_status_dm: BibStatus, biblio_field: BibDetail } = require('../models');
-const { Op, QueryTypes } = require('sequelize');
 const Fuse = require('fuse.js');
 const countCopies = require('../utils/countCopies');
 const processDetail = require('../utils/biblioDetail');
 const bibRepo = require('../repository/biblio');
+const valueToArray = require('../utils/valueToArray');
 
 module.exports = {
     basicSearch: async (req, res, next) => {
@@ -40,10 +39,11 @@ module.exports = {
             pagination.prev = start > 0 ? page - 1 : null;
 
             const data = biblios.rows.map(({
-                bibid, create_dt, call_nmbr1, call_nmbr2, call_nmbr3, title, title_remainder, author, collection, material, copies
+                bibid, create_dt, call_nmbr1, call_nmbr2, call_nmbr3, title, title_remainder, author, cover, collection, material, copies
             }) => ({
                 biblio_id: bibid,
                 created_at: create_dt,
+                cover: cover ? cover : 'default.jpg',
                 call_number: [call_nmbr1, call_nmbr2, call_nmbr3].join(' '),
                 title,
                 subtitle: title_remainder,
@@ -56,7 +56,7 @@ module.exports = {
 
             return res.status(200).json({
                 status: 'OK',
-                message: 'Get Biblios success',
+                message: 'Basic Search - Get Biblios success',
                 pagination,
                 data: data
             });
@@ -103,6 +103,7 @@ module.exports = {
             const data = {
                 biblio_id: biblio.bibid,
                 created_at: biblio.create_dt,
+                cover: biblio.cover ? biblio.cover : 'default.jpg',
                 call_number: [biblio.call_nmbr1, biblio.call_nmbr2, biblio.call_nmbr3].join(' '),
                 title: biblio.title,
                 subtitle: biblio.title_remainder,
@@ -130,14 +131,98 @@ module.exports = {
         }
     },
 
-    test: async (req, res, next) => {
+    advancedSearch: async (req, res, next) => {
         try {
-            const biblio = await bibRepo.findById(1);
+            let {
+                sort = "bibid", type = "ASC", page = "1", limit = "10", title = null, author = null, year = null, subject = null, publisher = null, material = null, collection = null
+            } = req.query;
 
-            const data = await bibRepo.simpleSubjectSearch(biblio.topic1, biblio.topic2, biblio.topic3);
+            page = parseInt(page);
+            limit = parseInt(limit);
+            let start = 0 + (page - 1) * limit;
+            let end = page * limit;
+
+            sort = sort.toLowerCase();
+            if (sort == 'date') sort = 'last_change_dt';
+            title = valueToArray(title);
+            author = valueToArray(author);
+            subject = valueToArray(subject);
+            year = valueToArray(year);
+            publisher = valueToArray(publisher);
+
+            const biblios = await bibRepo.advanceSearch(sort, type, limit, start, title, author, subject, material, collection);
+
+            let count = biblios.count;
+            let pagination = {};
+            pagination.totalRows = count;
+            pagination.totalPages = Math.ceil(count/limit);
+            pagination.thisPageRows = biblios.rows.length;
+            pagination.currentPage = page;
+            pagination.next = end < count ? page + 1 : null;
+            pagination.prev = start > 0 ? page - 1 : null;
+
+            const data = biblios.rows.map(({
+                bibid, create_dt, call_nmbr1, call_nmbr2, call_nmbr3, title, title_remainder, author, cover, collection, material, copies
+            }) => ({
+                biblio_id: bibid,
+                created_at: create_dt,
+                cover: cover ? cover : 'default.jpg',
+                call_number: [call_nmbr1, call_nmbr2, call_nmbr3].join(' '),
+                title,
+                subtitle: title_remainder,
+                author,
+                collection: collection.description,
+                material: material.description,
+                available: countCopies(copies),
+                copies: copies.length
+            }));
 
             return res.status(200).json({
+                status: 'OK',
+                message: 'Advanced Search - Get Biblios success',
+                pagination,
                 data: data
+            });
+        } catch (error) {
+            next(error);
+        }
+    },
+
+    test: async (req, res, next) => {
+        try {
+            let {
+                sort = "bibid", type = "ASC", page = "1", limit = "10", title = null, author = null, year = null, subject = null, publisher = null, material = null, collection = null
+            } = req.query;
+
+            page = parseInt(page);
+            limit = parseInt(limit);
+            let start = 0 + (page - 1) * limit;
+            let end = page * limit;
+
+            sort = sort.toLowerCase();
+            if (sort == 'date') sort = 'last_change_dt';
+            title = valueToArray(title);
+            author = valueToArray(author);
+            subject = valueToArray(subject);
+            year = valueToArray(year);
+            publisher = valueToArray(publisher);
+
+            const biblios = await bibRepo.advanceSearch(sort, type, limit, start, title, author, subject, material, collection);
+
+            let count = biblios.count;
+            let pagination = {};
+            pagination.totalRows = count;
+            pagination.totalPages = Math.ceil(count/limit);
+            pagination.thisPageRows = biblios.rows.length;
+            pagination.currentPage = page;
+            pagination.next = end < count ? page + 1 : null;
+            pagination.prev = start > 0 ? page - 1 : null;
+
+            return res.status(200).json({
+                status: 'OK',
+                message: 'Get Biblios success',
+                pagination,
+                data: biblios
             });
         } catch (error) {
             next(error);
