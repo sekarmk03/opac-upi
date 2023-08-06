@@ -20928,7 +20928,853 @@ module.exports = {
       "ind2_cd": "N",
       "subfield_cd": "a",
       "field_data": "nana"
-  }
+  },
+  {
+            "bibid": 6545,
+            "fieldid": 1,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "48221."
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 4,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 5,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Michigan"
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 7,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "140 hlm"
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 8,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 40579,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "744.422"
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 40580,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "International Textbook"
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 40581,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1968"
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 40582,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "ill."
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 40583,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "28 cm."
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 40584,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "hadiah"
+        },
+        {
+            "bibid": 6545,
+            "fieldid": 40585,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Sobariah"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118449,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2010-2329"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118450,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0-205-42425-2"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118451,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375.001"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118452,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118453,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Boston"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118454,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Pearson education"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118455,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2006"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118456,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xii, 202 hlm."
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118457,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118458,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "24 cm."
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118459,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118460,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek pengadaan UPI"
+        },
+        {
+            "bibid": 29813,
+            "fieldid": 118461,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Sobariah"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291928,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2011-00940"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291929,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed,9."
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291930,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-0-3-815248-2"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291931,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375.001"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291932,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291933,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Boston"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291934,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Pearson"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291935,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2010"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291936,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xi,588 hlm."
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291937,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291938,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "23 cm."
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291939,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291940,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "proyek Pengadaan Buku"
+        },
+        {
+            "bibid": 40090,
+            "fieldid": 291941,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R/Sobariah"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295054,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2011-00794"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295055,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-0-205-67922-5"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295056,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.11"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295057,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295058,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Upper saddle river"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295059,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Pearson Education"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295060,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2010"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295061,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xxii,523 hlm."
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295062,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295063,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "28 cm."
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295064,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295065,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek pengadaan buku"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 295066,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R"
+        },
+        {
+            "bibid": 40328,
+            "fieldid": 298583,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed.8,International ed."
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358385,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2013-02592"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358386,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed.8."
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358387,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-979-062-299-9"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358388,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.102 07"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358389,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358390,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Jakarta"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358391,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Indeks"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358392,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2011"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358393,
+            "tag": 520,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Becoming a Teacher"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358394,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xvii,274 hlm."
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358395,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358396,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "28 cm."
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358397,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358398,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek Pengadaan Buku"
+        },
+        {
+            "bibid": 45144,
+            "fieldid": 358399,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R/DA"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358400,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2013-02593.2013-02594.2013-02595.2013-02596.2013-02597"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358401,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed. 8"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358402,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-979-062-299-9"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358403,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.102 07"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358404,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358405,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Jakarta"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358406,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Indeks"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358407,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2011"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358408,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xvii, 287 hlm."
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358409,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "ilus."
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358410,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "28 cm."
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358411,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "12 eks."
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358412,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek Pengadaan Buku"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 358413,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R/DA/Yati/rm/ID"
+        },
+        {
+            "bibid": 45145,
+            "fieldid": 361626,
+            "tag": 520,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Judul asli: becoming a teacher"
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401384,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed.7."
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401385,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0-205-30710-8"
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401386,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375.001"
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401387,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "20"
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401388,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401389,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Allyn And Bacon"
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401390,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2000"
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401391,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xii,548 hlm."
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401392,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "24 cm."
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401393,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 48565,
+            "fieldid": 401394,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R"
+        }
    ], {});
   },
 

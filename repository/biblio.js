@@ -278,5 +278,12 @@ module.exports = {
         // };
 
         return biblios;
+    },
+
+    test: async () => {
+        const bibid = [40328, 29813, 48565, 40090, 45144, 45145, 6545];
+        const biblio = await BibDetail.findAll({where: {bibid: bibid}});
+
+        return biblio;
     }
 }

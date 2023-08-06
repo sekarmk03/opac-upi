@@ -190,39 +190,10 @@ module.exports = {
 
     test: async (req, res, next) => {
         try {
-            let {
-                sort = "bibid", type = "ASC", page = "1", limit = "10", title = null, author = null, year = null, subject = null, publisher = null, material = null, collection = null
-            } = req.query;
-
-            page = parseInt(page);
-            limit = parseInt(limit);
-            let start = 0 + (page - 1) * limit;
-            let end = page * limit;
-
-            sort = sort.toLowerCase();
-            if (sort == 'date') sort = 'last_change_dt';
-            title = valueToArray(title);
-            author = valueToArray(author);
-            subject = valueToArray(subject);
-            year = valueToArray(year);
-            publisher = valueToArray(publisher);
-
-            const biblios = await bibRepo.advanceSearch(sort, type, limit, start, title, author, subject, material, collection);
-
-            let count = biblios.count;
-            let pagination = {};
-            pagination.totalRows = count;
-            pagination.totalPages = Math.ceil(count/limit);
-            pagination.thisPageRows = biblios.rows.length;
-            pagination.currentPage = page;
-            pagination.next = end < count ? page + 1 : null;
-            pagination.prev = start > 0 ? page - 1 : null;
+            const data = await bibRepo.test();
 
             return res.status(200).json({
-                status: 'OK',
-                message: 'Get Biblios success',
-                pagination,
-                data: biblios
+                data
             });
         } catch (error) {
             next(error);
