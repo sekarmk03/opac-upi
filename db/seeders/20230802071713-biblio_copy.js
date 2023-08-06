@@ -5167,7 +5167,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0043680",
         "status_cd": "in",
-        "status_begin_dt": "2008-07-24T10:33:52.000Z",
+        "status_begin_dt": "2008-07-24 10:33:52",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5178,7 +5178,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0057875",
         "status_cd": "in",
-        "status_begin_dt": "2010-08-23T16:02:12.000Z",
+        "status_begin_dt": "2010-08-23 16:02:12",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5189,7 +5189,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0079902",
         "status_cd": "in",
-        "status_begin_dt": "2012-01-02T10:24:17.000Z",
+        "status_begin_dt": "2012-01-02 10:24:17",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5200,7 +5200,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0080453",
         "status_cd": "in",
-        "status_begin_dt": "2012-01-11T13:56:12.000Z",
+        "status_begin_dt": "2012-01-11 13:56:12",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5211,7 +5211,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142085",
         "status_cd": "in",
-        "status_begin_dt": "2013-03-08T10:03:11.000Z",
+        "status_begin_dt": "2013-03-08 10:03:11",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5222,8 +5222,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142631",
         "status_cd": "in",
-        "status_begin_dt": "2020-02-24T09:15:54.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2020-02-24 09:15:54",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5233,8 +5233,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142067",
         "status_cd": "in",
-        "status_begin_dt": "2023-05-15T14:34:53.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2023-05-15 14:34:53",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5244,7 +5244,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142039",
         "status_cd": "in",
-        "status_begin_dt": "2019-10-15T08:43:05.000Z",
+        "status_begin_dt": "2019-10-15 08:43:05",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5255,8 +5255,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142033",
         "status_cd": "in",
-        "status_begin_dt": "2019-10-14T13:10:19.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2019-10-14 13:10:19",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5266,8 +5266,8 @@ module.exports = {
         "copy_desc": "2013-02597",
         "barcode_nmbr": "a0142036",
         "status_cd": "in",
-        "status_begin_dt": "2020-01-09T15:20:30.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2020-01-09 15:20:30",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5277,8 +5277,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142817",
         "status_cd": "in",
-        "status_begin_dt": "2018-10-17T09:38:07.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2018-10-17 09:38:07",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5288,7 +5288,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142827",
         "status_cd": "in",
-        "status_begin_dt": "2017-06-17T10:43:53.000Z",
+        "status_begin_dt": "2017-06-17 10:43:53",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5299,7 +5299,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142606",
         "status_cd": "in",
-        "status_begin_dt": "2013-04-02T09:22:30.000Z",
+        "status_begin_dt": "2013-04-02 09:22:30",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
@@ -5310,8 +5310,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142507",
         "status_cd": "in",
-        "status_begin_dt": "2018-12-19T17:54:00.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2018-12-19 17:54:00",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5321,8 +5321,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142505",
         "status_cd": "in",
-        "status_begin_dt": "2020-02-21T07:34:01.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2020-02-21 07:34:01",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5332,8 +5332,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142818",
         "status_cd": "in",
-        "status_begin_dt": "2023-05-17T14:35:28.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2023-05-17 14:35:28",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5343,8 +5343,8 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0142506",
         "status_cd": "in",
-        "status_begin_dt": "2019-10-29T11:42:17.000Z",
-        "due_back_dt": "0000-00-00",
+        "status_begin_dt": "2019-10-29 11:42:17",
+        "due_back_dt": null,
         "mbrid": 0,
         "renewal_count": 0
     },
@@ -5354,7 +5354,7 @@ module.exports = {
         "copy_desc": "",
         "barcode_nmbr": "a0151868",
         "status_cd": "in",
-        "status_begin_dt": "2013-06-28T13:44:11.000Z",
+        "status_begin_dt": "2013-06-28 13:44:11",
         "due_back_dt": null,
         "mbrid": null,
         "renewal_count": 0
