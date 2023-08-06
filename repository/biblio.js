@@ -197,12 +197,15 @@ module.exports = {
         return finBiblios;
     },
 
-    advanceSearch: async (sort, type, limit, start, title, author, subject, material, collection) => {
+    advanceSearch: async (sort, type, limit, start, title, author, subject, material, collection, publisher, year) => {
         const conditions = [];
+        const incConditons = [];
 
         if (title && title.length > 0) generateCondition(conditions, title, 'title');
         if (author && author.length > 0) generateCondition(conditions, author, 'author');
         if (subject && subject.length > 0) generateCondition(conditions, subject, 'subject');
+        if (publisher && publisher.length > 0) generateCondition(incConditons, publisher, 'publisher');
+        if (year && year.length > 0) generateCondition(incConditons, year, 'year');
 
         if (material != null || material !== '' || material) {
             const materialCond = { material_cd: material };
@@ -216,6 +219,10 @@ module.exports = {
 
         const whereCondition = {
             [Op.and]: conditions,
+        };
+
+        const whereIncCondition = {
+            [Op.or]: incConditons,
         };
 
         const biblios = await Biblio.findAndCountAll({
@@ -235,6 +242,12 @@ module.exports = {
                     model: BibCopy,
                     as: 'copies',
                     attributes: ['status_cd'],
+                },
+                {
+                    model: BibDetail,
+                    as: 'detail',
+                    attributes: ['tag', 'subfield_cd', 'field_data'],
+                    where: whereIncCondition
                 }
             ],
             order: [
@@ -244,6 +257,25 @@ module.exports = {
             offset: start,
             distinct: true
         });
+
+        // const result = biblios.rows.map(async data => {
+        //     const res = await BibDetail.findAll({
+        //         where: {
+        //             bibid: data.bibid,
+        //             ...whereIncCondition
+        //         }
+        //     });
+
+        //     return {
+        //         ...data,
+        //         detail: res
+        //     }
+        // });
+
+        // return {
+        //     count: biblios.count,
+        //     rows: result
+        // };
 
         return biblios;
     }

@@ -28,6 +28,31 @@ const generateCondition = (conditions, data, tag) => {
                 ]
             }))
         };
+    } else if (tag == 'publisher') {
+        condition = {
+            [Op.or]: data.map(keyword => ({
+                tag: '260',
+                subfield_cd: 'b',
+                field_data: {
+                    [Op.like]: sequelize.fn('LOWER', sequelize.col('field_data')),
+                    [Op.like]: `%${keyword.toLowerCase()}%`
+                }
+            }))
+        };
+    } else if (tag == 'year') {
+        if (data.length == 1) {
+            condition = {
+                tag: '260',
+                subfield_cd: 'c',
+                field_data: data[0]
+            }
+        } else if (data.length == 2) {
+            condition = {
+                tag: '260',
+                subfield_cd: 'c',
+                field_data: { [Op.between]: [data[0], data[1]] },
+            }
+        }
     } else {
         condition = {
             [Op.or]: data.map(keyword => ({

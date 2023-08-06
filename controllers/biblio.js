@@ -150,7 +150,7 @@ module.exports = {
             year = valueToArray(year);
             publisher = valueToArray(publisher);
 
-            const biblios = await bibRepo.advanceSearch(sort, type, limit, start, title, author, subject, material, collection);
+            const biblios = await bibRepo.advanceSearch(sort, type, limit, start, title, author, subject, material, collection, publisher, year);
 
             let count = biblios.count;
             let pagination = {};
@@ -174,7 +174,7 @@ module.exports = {
                 collection: collection.description,
                 material: material.description,
                 available: countCopies(copies),
-                copies: copies.length
+                copies: copies.length,
             }));
 
             return res.status(200).json({
