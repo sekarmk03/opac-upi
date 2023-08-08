@@ -201,21 +201,25 @@ module.exports = {
         const conditions = [];
         const incConditons = [];
 
+        console.log(title, author, year, subject, publisher, material, collection);
+
         if (title && title.length > 0) generateCondition(conditions, title, 'title');
         if (author && author.length > 0) generateCondition(conditions, author, 'author');
         if (subject && subject.length > 0) generateCondition(conditions, subject, 'subject');
         if (publisher && publisher.length > 0) generateCondition(incConditons, publisher, 'publisher');
         if (year && year.length > 0) generateCondition(incConditons, year, 'year');
 
-        if (material != null || material !== '' || material) {
+        if (material != null && material !== '' && material) {
             const materialCond = { material_cd: material };
             conditions.push(materialCond);
         }
 
-        if (collection != null || collection !== '' || collection) {
+        if (collection != null && collection !== '' && collection) {
             const collectionCond = { collection_cd: collection };
             conditions.push(collectionCond);
         }
+
+        console.log(conditions);
 
         const whereCondition = {
             [Op.and]: conditions,

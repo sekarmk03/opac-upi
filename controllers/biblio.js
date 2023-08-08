@@ -137,6 +137,8 @@ module.exports = {
                 sort = "bibid", type = "ASC", page = "1", limit = "10", title = null, author = null, year = null, subject = null, publisher = null, material = null, collection = null
             } = req.query;
 
+            console.log(title, author, year, subject, publisher, material, collection);
+
             page = parseInt(page);
             limit = parseInt(limit);
             let start = 0 + (page - 1) * limit;
