@@ -21774,6 +21774,2967 @@ module.exports = {
             "ind2_cd": "N",
             "subfield_cd": "a",
             "field_data": "Eli R"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 1,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "56496."
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 4,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 5,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "New York"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 6,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0-471-26190-4"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 7,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xvi, 176 hlm."
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 8,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 44045,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 44046,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "John Wiley Sons"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 44047,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1973"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 44048,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 44049,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "22 cm"
+        },
+        {
+            "bibid": 3272,
+            "fieldid": 44050,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "dryd"
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 1,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "160032."
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 2,
+            "tag": 110,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "School Examinations and Assessment Council."
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 4,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 5,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 61853,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Heinemann Educational, [s.a.]."
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 7,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "viii, 88 hlm."
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 8,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 61854,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 61855,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "30 cm."
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 61856,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "lilis/dianarya/Isma"
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 473932,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "ed.1"
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 473933,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "[n.a]"
+        },
+        {
+            "bibid": 5033,
+            "fieldid": 569041,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumbangan"
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 1,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "6548."
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 3,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed. ke-4."
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 4,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 5,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "New York,"
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 25236,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Prentice-Hall"
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 7,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xiv, 144 hlm."
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 8,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks"
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 25237,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1947."
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 25238,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "22 cm."
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 25239,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "P & K"
+        },
+        {
+            "bibid": 5168,
+            "fieldid": 25240,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Nenz"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 1,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "130199"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 3,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Cet. ke-1."
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 4,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 5,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 6,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "1-898207-00-3"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 7,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "x, 178 hlm."
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 8,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 9,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "P2S2PT (96)"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 10,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "tatang/DA"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 520035,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.102"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 520036,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Cassell"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 520037,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1993"
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 520038,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 6835,
+            "fieldid": 520039,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "21 cm"
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224102,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "icha"
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224101,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "P2S2PT"
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224100,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "21 cm."
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224098,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1995."
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 1,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 2,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224097,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Cassell"
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 3,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "x, 178 hlm."
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224099,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224096,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 5,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0304330906."
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224095,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.102"
+        },
+        {
+            "bibid": 20045,
+            "fieldid": 224094,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "130198"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 1,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 2,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 Eks."
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 3,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xiv, 161 hlm."
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 5,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0749416696."
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 6,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed. ke-3."
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227045,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "130230"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227048,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "378.125"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227050,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227052,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Kogan Page"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227054,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1995"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227057,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227058,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "25 cm."
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227078,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "p2s2pt/96"
+        },
+        {
+            "bibid": 20179,
+            "fieldid": 227079,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Apri"
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 1,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 2,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 3,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "viii, 88 hlm."
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220985,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220981,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.264"
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220980,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "160033"
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220982,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220983,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Henemann Educational"
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220984,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "[s.a]"
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220986,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "30 cm."
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220987,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumb."
+        },
+        {
+            "bibid": 20868,
+            "fieldid": 220988,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Yati"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 1,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Massachusetts"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 2,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2 eks."
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 3,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xii, 163 hlm."
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227201,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 5,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0201074265"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 6,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed. ke-2."
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227196,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "47060"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227197,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "372.830 44"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227198,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227199,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Addison-Wesley Publishing Company"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227200,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1971"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227202,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "28 cm."
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227203,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Bank Dunia"
+        },
+        {
+            "bibid": 22514,
+            "fieldid": 227204,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "bayu septiawan/Isma"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229504,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "23 cm."
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229503,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229502,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1970"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229501,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "National Council of Teachers"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229500,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229506,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "lisna"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229505,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumbangan Bank Dunia"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229498,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "98850"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 1,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Washington"
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 2,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 3,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xvi, 557 hlm."
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 4,
+            "tag": 520,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Thirty-second Yearbook."
+        },
+        {
+            "bibid": 22695,
+            "fieldid": 229499,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "510"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101862,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2009-4570"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101863,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "499.221"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101864,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101865,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Jakarta"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101866,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Erlangga"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101867,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "[s.a.]"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101868,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "216 hlm."
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101869,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "21 cm."
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101870,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101871,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumbangan"
+        },
+        {
+            "bibid": 28601,
+            "fieldid": 101872,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "tatang/h2m"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192520,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2010-16693"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192521,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed.ke-4"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192522,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "9780335221745"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192523,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.100 7"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192524,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192525,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "New York"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192526,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "McGraw- Hill"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192527,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2008"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192528,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xii, 215 hlm."
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192529,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192530,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "24 cm."
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192531,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192532,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "proyek pengadaan buku"
+        },
+        {
+            "bibid": 35348,
+            "fieldid": 192533,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "HR/lisna"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223440,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "ill."
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223435,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223434,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375.00941"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223439,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "ix, 139 hlm."
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223438,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1993"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223433,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "1-85396-232-5"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223437,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Paul Chapman"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223444,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "NK"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223436,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223432,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "130385."
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223443,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "P2S2PT"
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223442,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 36850,
+            "fieldid": 223441,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "21 cm."
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302673,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2011-01382"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302674,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed.2."
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302675,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-0-335-23352-6"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302676,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.9"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302677,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302678,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "New York"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302679,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Open University Press"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302680,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2009"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302681,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xii, 236 hlm."
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302682,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302683,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "24 cm."
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302684,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302685,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek pengadaan buku"
+        },
+        {
+            "bibid": 40925,
+            "fieldid": 302686,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R/Yati"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327915,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "99548"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327916,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0-435-80851-6"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327917,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375.001"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327918,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "22"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327919,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London Inggris"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327920,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Heineman London"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327921,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "vii, 248 hlm."
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327922,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327923,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "22 cm"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327924,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Bank Dunia"
+        },
+        {
+            "bibid": 42814,
+            "fieldid": 327925,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "UT_Diky"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335192,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2012-02333"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335193,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Ed.3."
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335194,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "378.125"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335195,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335196,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335197,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Great Britain"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335198,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1995"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335199,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xi,161 hlm."
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335200,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335201,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "25 cm."
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335202,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335203,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumb"
+        },
+        {
+            "bibid": 43402,
+            "fieldid": 335204,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R/Darwis"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374409,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "168848"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374410,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0435-80851-6"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374411,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374412,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374413,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374414,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Heinemann"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374415,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1978"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374416,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "viii, 248 hlm."
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374417,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "21 cm."
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374418,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374419,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumb Dr Bart Crum"
+        },
+        {
+            "bibid": 46283,
+            "fieldid": 374420,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Sobariah/SS"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376628,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "171486"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376629,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "373.19"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376630,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "20"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376631,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "New York"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376632,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "The Ronald Press"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376633,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1954"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376634,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xi,520 hlm."
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376635,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "23 cm."
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376636,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376637,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumb M Salim H"
+        },
+        {
+            "bibid": 46465,
+            "fieldid": 376638,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377113,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "168977"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377114,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2-472-55047-3"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377115,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377116,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377117,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Berlin"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377118,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Printed in Germany"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377119,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1975"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377120,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xix, 99 hlm."
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377121,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "21 cm."
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377122,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377123,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumb Haradja Pamekas"
+        },
+        {
+            "bibid": 46506,
+            "fieldid": 377124,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Sobariah/SS"
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401922,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "147598"
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401923,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375"
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401924,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "20"
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401925,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Scranton"
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401926,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "International Textbook Company"
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401927,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1968"
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401928,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "vi,386 hlm."
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401929,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "24 cm."
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401930,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 48614,
+            "fieldid": 401931,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R"
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402293,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "107891"
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402294,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375.001"
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402295,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "20"
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402296,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Boston"
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402297,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Little,Brown And  company"
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402298,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1977"
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402299,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "x,163 hlm."
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402300,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402301,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "21 cm."
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402302,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 48644,
+            "fieldid": 402303,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402304,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "87440"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402305,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0-226-8231-9"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402306,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402307,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "20"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402308,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "London"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402309,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "THe University of chicago Press"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402310,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1975"
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402311,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "vi,128 hlm."
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402312,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "20 cm."
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402313,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 48645,
+            "fieldid": 402314,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Eli R"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403279,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "130292"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403280,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "0 19 288000 4"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403281,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403282,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "20"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403283,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Oxford"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403284,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Oxford University Press"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403285,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1994"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403286,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "168 hlm."
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403287,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "20 cm."
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403288,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403289,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "P2S2PT"
+        },
+        {
+            "bibid": 48725,
+            "fieldid": 403290,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "DA"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422664,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2013-08751"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422665,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Cet. 1"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422666,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-979-062-025-4"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422667,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.302 802 1"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422668,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422669,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Jakarta"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422670,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Indeks"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422671,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2013"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422672,
+            "tag": 520,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Judul aslil. The English teacher's survival guide : ready-to-use tecniques & materials for grade 7-12 second edition"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422673,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xi, 390 hlm."
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422674,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422675,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "28 cm."
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422676,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422677,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek pengadaan buku"
+        },
+        {
+            "bibid": 50200,
+            "fieldid": 422678,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "rm/ID"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451803,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2014-01904"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451804,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "4th ed."
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451805,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-0-19-513045-4"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451806,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "808.040.071"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451807,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451808,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "New York"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451809,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Oxford Univesity Press"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451810,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2001"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451811,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xv, 346 hlm."
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451812,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451813,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "23 cm."
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451814,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451815,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek Pengadaan Buku"
+        },
+        {
+            "bibid": 52088,
+            "fieldid": 451816,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "ID/Yati"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486687,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2015-01445"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486688,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "1st ed."
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486689,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-0-7879-7877-8"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486690,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "371.271"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486691,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486692,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "San Francisco, CA"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486693,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "Jossey-Bass"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486694,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2006"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486695,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xxxviii, 248 hlm."
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486696,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "il."
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486697,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "28 cm."
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486698,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486699,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Proyek Pengadaan Buku"
+        },
+        {
+            "bibid": 54732,
+            "fieldid": 486700,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "dianarya/ID"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615090,
+            "tag": 997,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "2019-03256"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615091,
+            "tag": 250,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Cet. 1"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615092,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "978-602-5643-00-2"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615093,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "375.001"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615094,
+            "tag": 82,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "2",
+            "field_data": "23"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615095,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Bandung"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615096,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "UPI Press"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615097,
+            "tag": 260,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "2017"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615098,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "xii, 223 hlm."
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615099,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "b",
+            "field_data": "ilus."
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615100,
+            "tag": 300,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "25 cm."
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615101,
+            "tag": 20,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "c",
+            "field_data": "1 eks."
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615102,
+            "tag": 541,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "h",
+            "field_data": "Sumb. Penulis"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 615103,
+            "tag": 986,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "ln/ID"
+        },
+        {
+            "bibid": 64025,
+            "fieldid": 618322,
+            "tag": 520,
+            "ind1_cd": "N",
+            "ind2_cd": "N",
+            "subfield_cd": "a",
+            "field_data": "Bibliografi"
         }
    ], {});
   },
