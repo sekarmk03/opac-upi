@@ -228,7 +228,7 @@ module.exports = {
         let whereIncCondition;
         if (year.length > 0 || publisher.length > 0) {
             whereIncCondition = {
-                [Op.or]: incConditons,
+                [Op.and]: incConditons,
             };
         } else {
             whereIncCondition = {};
