@@ -264,7 +264,7 @@ module.exports = {
             ],
             limit: limit,
             offset: start,
-            distinct: true
+            distinct: true,
         });
 
         return biblios;

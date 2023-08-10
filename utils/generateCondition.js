@@ -29,15 +29,21 @@ const generateCondition = (conditions, data, tag) => {
             }))
         };
     } else if (tag == 'publisher') {
+        // condition = {
+        //     [Op.or]: data.map(keyword => ({
+        //         tag: '260',
+        //         subfield_cd: 'b',
+        //         field_data: {
+        //             [Op.like]: sequelize.fn('LOWER', sequelize.col('field_data')),
+        //             [Op.like]: `%${keyword.toLowerCase()}%`
+        //         }
+        //     }))
+        // };
+
         condition = {
-            [Op.or]: data.map(keyword => ({
-                tag: '260',
-                subfield_cd: 'b',
-                field_data: {
-                    [Op.like]: sequelize.fn('LOWER', sequelize.col('field_data')),
-                    [Op.like]: `%${keyword.toLowerCase()}%`
-                }
-            }))
+            [Op.or]: data.map(keyword => (
+                sequelize.literal(`biblio.bibid IN (SELECT bibid FROM biblio_field WHERE tag=260 AND subfield_cd='b' AND LOWER(field_data) LIKE '%${keyword}%')`)
+            ))
         };
     } else if (tag == 'year') {
         if (data.length == 1) {
@@ -50,7 +56,7 @@ const generateCondition = (conditions, data, tag) => {
             condition = {
                 tag: '260',
                 subfield_cd: 'c',
-                field_data: { [Op.between]: [data[0], data[1]] },
+                field_data: { [Op.between]: [data[0], data[1]] }
             }
         }
     } else {
