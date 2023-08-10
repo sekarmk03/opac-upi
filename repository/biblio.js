@@ -6,13 +6,78 @@ const generateCondition = require('../utils/generateCondition');
 
 module.exports = {
     basicSearchRepo: async (search, key, sort, type, limit, start) => {
-        const biblios = await Biblio.findAndCountAll({
-            where: {
+        const subjectConditions = [
+            {
+                topic1: {
+                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic1')),
+                    [Op.like]: `%${key.toLowerCase()}%`
+                }
+            },
+            {
+                topic2: {
+                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic2')),
+                    [Op.like]: `%${key.toLowerCase()}%`
+                }
+            },
+            {
+                topic3: {
+                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic3')),
+                    [Op.like]: `%${key.toLowerCase()}%`
+                }
+            },
+            {
+                topic4: {
+                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic4')),
+                    [Op.like]: `%${key.toLowerCase()}%`
+                }
+            },
+            {
+                topic5: {
+                    [Op.like]: sequelize.fn('LOWER', sequelize.col('topic5')),
+                    [Op.like]: `%${key.toLowerCase()}%`
+                } 
+            }
+        ]
+        let conditions = {};
+        let order = [];
+
+        if (search) {
+            conditions = {
                 [search]: {
                     [Op.like]: sequelize.fn('LOWER', sequelize.col(`${search}`)),
                     [Op.like]: `%${key.toLowerCase()}%`
                 }
-            },
+            }
+        } else {
+            conditions = {
+                [Op.or]: [
+                    {
+                        title: {
+                            [Op.like]: sequelize.fn('LOWER', sequelize.col(`title`)),
+                            [Op.like]: `%${key.toLowerCase()}%`
+                        }
+                    },
+                    {
+                        author: {
+                            [Op.like]: sequelize.fn('LOWER', sequelize.col(`author`)),
+                            [Op.like]: `%${key.toLowerCase()}%`
+                        }
+                    },
+                    ...subjectConditions
+                ]
+            }
+        }
+
+        if (sort == 'date') {
+            let o = ['detail', 'field_data', type];
+            order = [...o];
+        } else {
+            let o = [sort, type];
+            order = [...o];
+        }
+
+        const biblios = await Biblio.findAndCountAll({
+            where: conditions,
             include: [
                 {
                     model: Collection,
@@ -28,10 +93,23 @@ module.exports = {
                     model: BibCopy,
                     as: 'copies',
                     attributes: ['status_cd'],
+                },
+                {
+                    model: BibDetail,
+                    as: 'detail',
+                    attributes: ['field_data'],
+                    where: {
+                        tag: '260',
+                        subfield_cd: 'c',
+                        // [Op.and]: sequelize.where(sequelize.fn('LENGTH', sequelize.col('field_data')), 4),
+                        field_data: {
+                            [Op.regexp]: '^[0-9]{4}$',
+                        },
+                    }
                 }
             ],
             order: [
-                [sort, type]
+                order
             ],
             limit: limit,
             offset: start,

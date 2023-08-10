@@ -24,6 +24,18 @@ const generateCondition = (conditions, data, tag) => {
                             [Op.like]: sequelize.fn('LOWER', sequelize.col('topic3')),
                             [Op.like]: `%${keyword.toLowerCase()}%`
                         }
+                    },
+                    {
+                        topic4: {
+                            [Op.like]: sequelize.fn('LOWER', sequelize.col('topic4')),
+                            [Op.like]: `%${keyword.toLowerCase()}%`
+                        }
+                    },
+                    {
+                        topic5: {
+                            [Op.like]: sequelize.fn('LOWER', sequelize.col('topic5')),
+                            [Op.like]: `%${keyword.toLowerCase()}%`
+                        } 
                     }
                 ]
             }))

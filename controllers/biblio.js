@@ -8,13 +8,13 @@ module.exports = {
     basicSearch: async (req, res, next) => {
         try {
             let {
-                sort = "bibid", type = "ASC", search = "title", key = "", page = "1", limit = "10"
+                sort = "bibid", type = "ASC", search = null, key = "", page = "1", limit = "10"
             } = req.query;
 
             sort = sort.toLowerCase();
-            search = search.toLowerCase();
+            search = search ? search.toLowerCase() : null;
             key = key.toLowerCase();
-            if (sort == 'date') sort = 'last_change_dt';
+            // if (sort == 'date') sort = 'last_change_dt';
 
             page = parseInt(page);
             limit = parseInt(limit);
@@ -23,10 +23,10 @@ module.exports = {
 
             let biblios;
 
-            if (search == 'author' || search == 'title') {
-                biblios = await bibRepo.basicSearchRepo(search, key, sort, type, limit, start);
-            } else if (search == 'subject') {
+            if (search == 'subject') {
                 biblios = await bibRepo.subjectSearch(search, key, sort, type, limit, start);
+            } else {
+                biblios = await bibRepo.basicSearchRepo(search, key, sort, type, limit, start);
             }
 
             let count = biblios.count;
