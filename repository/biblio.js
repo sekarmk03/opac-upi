@@ -101,10 +101,10 @@ module.exports = {
                     where: {
                         tag: '260',
                         subfield_cd: 'c',
-                        [Op.and]: sequelize.where(sequelize.fn('LENGTH', sequelize.col('field_data')), 4),
-                        // field_data: {
-                        //     [Op.regexp]: '^[0-9]{4}$',
-                        // },
+                        // [Op.and]: sequelize.where(sequelize.fn('LENGTH', sequelize.col('field_data')), 4),
+                        field_data: {
+                            [Op.regexp]: '^[0-9]{4}$',
+                        },
                     }
                 }
             ],
