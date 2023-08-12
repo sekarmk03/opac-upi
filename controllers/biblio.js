@@ -38,27 +38,27 @@ module.exports = {
             pagination.next = end < count ? page + 1 : null;
             pagination.prev = start > 0 ? page - 1 : null;
 
-            const data = biblios.rows.map(({
-                bibid, create_dt, call_nmbr1, call_nmbr2, call_nmbr3, title, title_remainder, author, cover, collection, material, copies
-            }) => ({
-                biblio_id: bibid,
-                created_at: create_dt,
-                cover: cover ? cover : 'default.jpg',
-                call_number: [call_nmbr1, call_nmbr2, call_nmbr3].join(' '),
-                title,
-                subtitle: title_remainder,
-                author,
-                collection: collection.description,
-                material: material.description,
-                available: countCopies(copies),
-                copies: copies.length
-            }));
+            // const data = biblios.rows.map(({
+            //     bibid, create_dt, call_nmbr1, call_nmbr2, call_nmbr3, title, title_remainder, author, cover, collection, material, copies
+            // }) => ({
+            //     biblio_id: bibid,
+            //     created_at: create_dt,
+            //     cover: cover ? cover : 'default.jpg',
+            //     call_number: [call_nmbr1, call_nmbr2, call_nmbr3].join(' '),
+            //     title,
+            //     subtitle: title_remainder,
+            //     author,
+            //     collection: collection.description,
+            //     material: material.description,
+            //     available: countCopies(copies),
+            //     copies: copies.length
+            // }));
 
             return res.status(200).json({
                 status: 'OK',
                 message: 'Basic Search - Get Biblios success',
                 pagination,
-                data: data
+                data: biblios
             });
         } catch (error) {
             next(error);

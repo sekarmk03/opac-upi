@@ -15,8 +15,14 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   biblio_field.init({
-    bibid: DataTypes.INTEGER,
-    fieldid: DataTypes.INTEGER,
+    bibid: {
+      type: DataTypes.INTEGER,
+      primaryKey: true
+    },
+    fieldid: {
+      type: DataTypes.INTEGER,
+      primaryKey: true
+    },
     tag: DataTypes.INTEGER,
     ind1_cd: DataTypes.STRING,
     ind2_cd: DataTypes.STRING,

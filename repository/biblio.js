@@ -68,7 +68,7 @@ module.exports = {
             }
         }
 
-        if (sort == 'date') {
+        /*if (sort == 'date') {
             let o = ['detail', 'field_data', type];
             order = [...o];
         } else {
@@ -97,15 +97,15 @@ module.exports = {
                 {
                     model: BibDetail,
                     as: 'detail',
-                    attributes: ['field_data'],
+                    attributes: [[sequelize.literal("CAST(field_data AS UNSIGNED)"), 'publisher']],
                     where: {
                         tag: '260',
                         subfield_cd: 'c',
-                        [Op.and]: sequelize.where(sequelize.fn('LENGTH', sequelize.col('field_data')), 4),
-                        // field_data: {
-                        //     [Op.regexp]: '^[0-9]{4}$',
-                        // },
-                    }
+                        // [Op.and]: sequelize.where(sequelize.fn('LENGTH', sequelize.col('field_data')), 4),
+                        field_data: {
+                            [Op.regexp]: '^[0-9]{4}$',
+                        },
+                    },
                 }
             ],
             order: [
@@ -114,6 +114,47 @@ module.exports = {
             limit: limit,
             offset: start,
             distinct: true,
+        });*/
+
+        const biblios = await BibDetail.findAndCountAll({
+            attributes: [[sequelize.literal("CAST(field_data AS UNSIGNED)"), 'field_data'], [sequelize.fn('DISTINCT', sequelize.col('bibid')), 'bibid']],
+            where: {
+                tag: 260,
+                subfield_cd: 'c',
+                field_data: {
+                    [Op.regexp]: '^[0-9]{4}$',
+                },
+            },
+            include: [
+                {
+                    model: Biblio,
+                    right: true,
+                    as: 'source',
+                    where: conditions,
+                    include: [
+                        {
+                            model: Collection,
+                            as: 'collection',
+                            attributes: ['description']
+                        },
+                        {
+                            model: Material,
+                            as: 'material',
+                            attributes: ['description']
+                        },
+                        {
+                            model: BibCopy,
+                            as: 'copies',
+                            attributes: ['status_cd'],
+                        },
+                    ]
+                }
+            ],
+            order: [
+                ['field_data', type]
+            ],
+            limit: limit,
+            offset: start,
         });
 
         return biblios;
