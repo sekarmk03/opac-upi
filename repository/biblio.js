@@ -97,7 +97,7 @@ module.exports = {
                 {
                     model: BibDetail,
                     as: 'detail',
-                    attributes: ['field_data'],
+                    attributes: [[sequelize.literal("CAST(field_data AS UNSIGNED)"), 'publisher']],
                     where: {
                         tag: '260',
                         subfield_cd: 'c',
