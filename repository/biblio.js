@@ -275,13 +275,23 @@ module.exports = {
         return finBiblios;
     },
 
-    advanceSearch: async (sort, type, limit, start, title, author, subject, material, collection, publisher, year) => {
+    advanceSearch: async (sort, type, limit, start, title, author, subject, material, collection, publisher, year, all) => {
         const conditions = [];
+        const allConditions = [];
         const incConditons = [];
 
-        if (title && title.length > 0) generateCondition(conditions, title, 'title');
-        if (author && author.length > 0) generateCondition(conditions, author, 'author');
-        if (subject && subject.length > 0) generateCondition(conditions, subject, 'subject');
+        if (!all || all == null || all.length == 0) {
+            if (title && title.length > 0) generateCondition(conditions, title, 'title');
+            if (author && author.length > 0) generateCondition(conditions, author, 'author');
+            if (subject && subject.length > 0) generateCondition(conditions, subject, 'subject');
+        } else {
+            if (all && all.length > 0) generateCondition(allConditions, all, 'title');
+            if (all && all.length > 0) generateCondition(allConditions, all, 'author');
+            if (all && all.length > 0) generateCondition(allConditions, all, 'subject');
+            conditions.push({
+                [Op.or]: allConditions
+            });
+        }
         if (publisher && publisher.length > 0) generateCondition(incConditons, publisher, 'publisher');
         if (year && year.length > 0) generateCondition(incConditons, year, 'year');
 
@@ -295,13 +305,20 @@ module.exports = {
         }
 
         let whereCondition;
-        if (title.length > 0 || author.length > 0 || subject.length > 0 || material != null || collection != null) {
+        if (title.length > 0 || author.length > 0 || subject.length > 0 || material != null || collection != null || all != null) {
             whereCondition = {
                 [Op.and]: conditions,
             };
         } else {
             whereCondition = {};
         }
+
+        console.log(whereCondition);
+        console.log(conditions);
+        console.log(allConditions);
+        console.log(allConditions[0]);
+        console.log(allConditions[1]);
+        console.log(allConditions[2]);
 
         let whereIncCondition;
         if (year.length > 0 || publisher.length > 0) {

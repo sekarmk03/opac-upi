@@ -134,7 +134,7 @@ module.exports = {
     advancedSearch: async (req, res, next) => {
         try {
             let {
-                sort = "bibid", type = "ASC", page = "1", limit = "10", title = null, author = null, year = null, subject = null, publisher = null, material = null, collection = null
+                sort = "bibid", type = "ASC", page = "1", limit = "10", title = null, author = null, year = null, subject = null, publisher = null, material = null, collection = null, all = null
             } = req.query;
 
             page = parseInt(page);
@@ -149,8 +149,9 @@ module.exports = {
             subject = valueToArray(subject);
             year = valueToArray(year);
             publisher = valueToArray(publisher);
+            all = valueToArray(all);
 
-            const biblios = await bibRepo.advanceSearch(sort, type, limit, start, title, author, subject, material, collection, publisher, year);
+            const biblios = await bibRepo.advanceSearch(sort, type, limit, start, title, author, subject, material, collection, publisher, year, all);
 
             let count = biblios.count;
             let pagination = {};
