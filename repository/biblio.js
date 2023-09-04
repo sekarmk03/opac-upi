@@ -313,13 +313,6 @@ module.exports = {
             whereCondition = {};
         }
 
-        console.log(whereCondition);
-        console.log(conditions);
-        console.log(allConditions);
-        console.log(allConditions[0]);
-        console.log(allConditions[1]);
-        console.log(allConditions[2]);
-
         let whereIncCondition;
         if (year.length > 0 || publisher.length > 0) {
             whereIncCondition = {
