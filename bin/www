@@ -17,8 +17,8 @@ let fs = require('fs');
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
-const privateKey = fs.readFileSync('path/to/your/private-key.pem', 'utf8');
-const certificate = fs.readFileSync('path/to/your/certificate.pem', 'utf8');
+const privateKey = fs.readFileSync('/etc/ssl/private/star_upi_edu.key', 'utf8');
+const certificate = fs.readFileSync('/etc/ssl/private/star_upi_edu.cert', 'utf8');
 
 const credentials = { key: privateKey, cert: certificate };
 
