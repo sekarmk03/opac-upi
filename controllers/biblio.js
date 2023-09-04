@@ -82,14 +82,14 @@ module.exports = {
 
             const detailData = await bibRepo.findDetailById(id);
 
-            // let searchedData = await bibRepo.simpleSubjectSearch(biblio.topic1, biblio.topic2, biblio.topic3);
-            // const queryTitle = biblio.title;
+            let searchedData = await bibRepo.simpleSubjectSearch(biblio.topic1, biblio.topic2, biblio.topic3);
+            const queryTitle = biblio.title;
 
-            // const fuse = new Fuse(searchedData, {
-            //     keys: ['title']
-            // });
+            const fuse = new Fuse(searchedData, {
+                keys: ['title']
+            });
 
-            // const similarBiblio = fuse.search(queryTitle).map(({item}) => (item));
+            const similarBiblio = fuse.search(queryTitle).map(({item}) => (item));
 
             const copiesData = biblio.copies.map(({copyid, barcode_nmbr, status_cd, status, status_begin_dt, due_back_dt}) => ({
                 copy_id: copyid,
@@ -118,8 +118,8 @@ module.exports = {
                     totalCopies: biblio.copies.length,
                     copiesData
                 },
-                // recommendation: similarBiblio.slice(0, 11)
-                recommendation: []
+                recommendation: similarBiblio.slice(0, 11)
+                // recommendation: []
             };
 
             return res.status(200).json({

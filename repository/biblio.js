@@ -235,36 +235,7 @@ module.exports = {
     },
 
     simpleSubjectSearch: async (key1, key2, key3) => {
-        // let query = `SELECT subq.bibid, subq.title, subq.author, subq.tag, subq.subfield_cd, subq.field_data
-        // FROM (
-        //     SELECT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data
-        //     FROM biblio AS b
-        //     LEFT JOIN (
-        //         SELECT * FROM biblio_field
-        //         WHERE (tag=260 AND subfield_cd='b') OR (tag=260 AND subfield_cd='c')
-        //     ) AS f ON b.bibid = f.bibid
-        //     WHERE LOWER(b.topic1) LIKE '%${key1}%'
-        //         OR LOWER(b.topic2) LIKE '%${key1}%'
-        //         OR LOWER(b.topic1) LIKE '%${key2}%'
-        //         OR LOWER(b.topic2) LIKE '%${key2}%'
-        //         OR LOWER(b.topic1) LIKE '%${key3}%'
-        //         OR LOWER(b.topic2) LIKE '%${key3}%'
-        // ) AS subq
-        // GROUP BY subq.title;`;
-        let query = `
-            SELECT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data
-            FROM biblio AS b
-            LEFT JOIN (
-                SELECT * FROM biblio_field
-                WHERE (tag=260 AND subfield_cd='b') OR (tag=260 AND subfield_cd='c')
-            ) AS f ON b.bibid = f.bibid
-            WHERE LOWER(b.topic1) LIKE '%${key1}%'
-                OR LOWER(b.topic2) LIKE '%${key1}%'
-                OR LOWER(b.topic1) LIKE '%${key2}%'
-                OR LOWER(b.topic2) LIKE '%${key2}%'
-                OR LOWER(b.topic1) LIKE '%${key3}%'
-                OR LOWER(b.topic2) LIKE '%${key3}%'
-        ;`;
+        let query = `SELECT b.bibid, b.title, b.author, f.tag, f.subfield_cd, f.field_data FROM biblio AS b LEFT JOIN (SELECT * FROM biblio_field WHERE (tag=260 AND subfield_cd='b') OR (tag=260 AND subfield_cd='c')) AS f ON b.bibid = f.bibid WHERE LOWER(b.topic1) LIKE '%${key1}%' OR LOWER(b.topic2) LIKE '%${key1}%' OR LOWER(b.topic1) LIKE '%${key2}%' OR LOWER(b.topic2) LIKE '%${key2}%' OR LOWER(b.topic1) LIKE '%${key3}%' OR LOWER(b.topic2) LIKE '%${key3}%'`;
 
         const biblios = await sequelize.query(query, { type: QueryTypes.SELECT });
 
