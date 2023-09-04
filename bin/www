@@ -7,6 +7,8 @@
 var app = require('../index');
 var debug = require('debug')('opac:server');
 var http = require('http');
+let https = require('https');
+let fs = require('fs');
 
 /**
  * Get port from environment and store in Express.
@@ -15,11 +17,17 @@ var http = require('http');
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+const privateKey = fs.readFileSync('path/to/your/private-key.pem', 'utf8');
+const certificate = fs.readFileSync('path/to/your/certificate.pem', 'utf8');
+
+const credentials = { key: privateKey, cert: certificate };
+
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+// var server = http.createServer(app);
+const server = https.createServer(credentials, app);
 
 /**
  * Listen on provided port, on all network interfaces.
